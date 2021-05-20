@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@+id/listFOffice" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center|right|top" android:id="@+id/btnlogoutoffice" android:background="@color/photocolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="logout" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@+id/addFacility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/add" app:backgroundTint="@color/black" app:fabSize="normal" />
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.singinuo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application android:usesCleartextTraffic="true" android:testOnly="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round" android:label="@string/app_name" android:icon="@drawable/office_24"  android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:allowBackup="true">
+
+    <activity android:name="com.example.singinuo.loginuser.ConnectOfficeActivity" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginuser.BrowseActivity" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.facility.FacilityInfo" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.facility.OfficeActivity" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.model.Info" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.admin.OfficeInfo" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.admin.UserInfo" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.admin.OfficesActivity_Admin" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.admin.UsersActivity_Admin" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginuser.RegisterUserActivity" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginuser.LoginUser" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.admin.AdminActivity" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.loginoffice.LoginOffice" android:theme="@style/Theme.SinginUO"/>
+
+    <activity android:name="com.example.singinuo.MainActivity" android:theme="@style/Theme.SinginUO"/>
+
+
+    <activity android:name="com.example.singinuo.loginuser.UserActivity" android:theme="@style/Theme.SinginUO">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false"/>
+
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+</application>
+</manifest>
